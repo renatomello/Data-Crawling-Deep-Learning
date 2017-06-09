@@ -31,10 +31,10 @@ for feature in features_7:
 	if (feature[3].find(" ") == -1 and feature[3].find("ADVENTURE") == -1):
 		features_cleaned.append([feature[0].replace(".", ""),feature[3],feature[4].replace(" km", "").replace(".",""),feature[5]])
 for feature in features_8:
-	if (feature[4].find(" ") == -1):
+	if (feature[4].find(" ") == -1 and feature[6].find(" ") == -1):
 		features_cleaned.append([feature[0].replace(".", ""),feature[4],feature[5].replace(" km", ""),feature[6]])
 for feature in features_9:
-	if (feature[4].find(" ") == -1):
+	if (feature[4].find(" ") == -1 and feature[6].find(" ") == -1):
 		features_cleaned.append([feature[0].replace(".", ""),feature[4],feature[5].replace(" km", ""),feature[6]])
 
 features = np.array(features_cleaned)
