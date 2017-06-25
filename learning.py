@@ -29,7 +29,7 @@ y_data , y_test = data_y[:train_set_size,:], data_y[train_set_size:,:]
 
 print("Starting learning process")
 
-# Regularization strengh
+# Regularization strength
 Lambda = 0.01
 learning_rate = 0.01
 
